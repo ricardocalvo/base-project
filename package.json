@@ -1,0 +1,9 @@
+{
+    "name":             "base-project",
+    "description":      "Base Project to fast start new projects!",
+    "version":          "0.0.1",
+    "repository": {},
+    "devDependencies": {
+        "express": 					"~3.4.4"
+    }
+}

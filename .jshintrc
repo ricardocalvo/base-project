@@ -1,0 +1,204 @@
+{
+    //http://www.jshint.com/options/
+    "bitwise": false, //true, prohibits bitwise operators
+    "curly": true,    //true, always use curly braces
+    "eqeqeq": true,   //true, use === instead of ==
+    "forin": false,   //true, requires all "for in" check obj.hasOwnProperty
+    "immed": true,    //true, prohibits the use of immediate function invocations without wrapping them in parentheses
+    "latedef": false, //true, prohibits the use of a variable before it was defined
+    "newcap": true,   //true, requires you to capitalize names of unctions that are intended to be used with new
+    "noarg": true,    //true, prohibits the use of arguments.caller and arguments.callee
+    "noempty": true,  //true, warns when you have an empty block in your code
+    "nonew": true,    //true, prohibits the call constructor functions without assigning its result to any variable:
+    "plusplus": false,  //true, prohibits the use of unary increment and decrement operators ++ --
+    "regexp": false,  //true, prohibits the use of unsafe . in regular expressions
+    "undef": true,    //true, prohibits the use of explicitly undeclared variables
+    "strict": false,  //true, requires all functions to run in EcmaScript 5's strict mode
+    "trailing": false,  //true, prohibits the trailing spaces
+
+    //Relax options
+    "asi": false,     //true, suppresses warnings about missing semicolons
+    "boss": false,    //true, suppresses warnings about the use of assignments in cases where comparisons are expected.
+    "debug": false,   //true, suppresses warnings about the debugger statements in your code
+    "eqnull": true,   //true, allow use of == null, !=null
+    "es5": false,     //true, tells JSHint that your code uses ECMAScript 5 specific features such as getters and setters
+    "esnext": false,  //true, tells JSHint that your code uses ES.next specific features such as const and let
+    "evil": false,    //true, suppresses warnings about the use of eval
+    "expr": false,    //true, suppresses warnings about the use of expressions where normally you would expect to see assignments or function calls
+    "funcscope": false, //true, suppresses warnings about declaring variables inside of control structures while accessing them later from the outside
+    "globalstrict": false,  //true, suppresses warnings about the use of global strict mode.
+    "iterator": false,  //true, suppresses warnings about the __iterator__ property
+    "lastsemic": false, //true, suppresses warnings about missing semicolons but only when the semicolon is omited for the last statement in a one-line block
+    "laxbreak": false,  //true, suppresses most of the warnings about possibly unsafe line breakings in your code
+    "laxcomma": false,  //true, suppresses warnings about comma-first coding style
+    "loopfunc": false,  //true, suppresses warnings about functions inside of loops
+    "multistr": false,  //true, suppresses warnings about multi-line strings
+    "onecase": false, //true, suppresses watnings about switches with just one case
+    "proto": false,   //true, suppresses warnings about the __proto__ property
+    "regexdash": false, //true, suppresses warnings about unescaped - in the end of regular expressions
+    "scripturl": false, //true, suppresses warnings about the use of script-targeted URLs—such as javascript:...
+    "smarttabs": true,  //true, suppresses warnings about mixed tabs and spaces when the latter are used for alignmnent only
+    "shadow": false,  //true, suppresses warnings about variable shadowing i.e. declaring a variable that had been already declared somewhere in the outer scope.
+    "sub": true,    //true, suppresses warnings about using [] notation when it can be expressed in dot notation: person['name'] vs. person.name
+    "supernew": false,  //true, suppresses warnings about "weird" constructions like new function () { ... } and new Object;
+    "validthis": false, //true, suppresses warnings about possible strict violations when the code running in a strict mode and you use this in a non-constructor function
+
+    //Environments
+    "browser": true,  //true, defines globals exposed by modern browsers
+    "couch": false,   //true, defines globals exposed by CouchDB
+    "devel": true,    //true, defines globals that are usually used for debugging: console, alert ...
+    "dojo": false,    //true, defines globals exposed by the Dojo Toolkit
+    "jquery": true,   //true, defines globals exposed by the jQuery JavaScript library
+    "mootools": false,  //true, defines globals exposed by the MooTools JavaScript framework
+    "node": true,   //true, defines globals available when your code is running inside of Node
+    "nonstandard": true,  //true, defines non-standard but widely adopted globals such as escape and unescape
+    "prototypejs": false, //true, defines globals exposed by the Prototype JavaScript framework.
+    "rhino": false,   //true, defines globals available when your code is running inside of Rhino
+    "wsh": false,   //true, defines globals available when your code is running as a script for the Windows Script Host.
+
+    //Legacy
+    "nomen": false,   //true, disallows the use of dangling _ in variables
+    "onevar": false,  //true, allows only one var statement per function
+    "passfail": false,  //true, makes JSHint stop on the first error or warning
+    "white": false,   //true, make JSHint check your source code against Douglas Crockford's JavaScript coding style
+
+    //Mediabox Global variables
+    "predef":
+    [
+      //Oregan extensions
+      "system", "config", "debug", "GUI",
+      "MediaManager", "MediaContainer", "MediaItem",
+      "PicturePlayer", "MediaPlayer", "language", "SimplePlaylistManager",
+      "networkstate", "Wireless", "TV", "userLogin", "FlickrAuthOpen",
+      "ALUDRM", "WMDRMPD", "HSOptions",
+      //Nagra extensions
+      "CCOM", "OTV", "EPGService", "DatabaseColumn", "ScheduleTask",
+      "ScheduleJob", "Scheduler", "CA", "CAPIN", "CASystem",
+      "CADialogue", "Output", "PID", "Player", "Source",
+      "SVGPoint", "ActiveXObject", "DatabaseTable", "DatabaseColumn",
+      "System", "EPGEvent",
+      //Samsung extensions
+      "Common", "FileSystem",
+
+      //Kernel
+      "TID",
+
+      //All the next global variables must be into TID variable
+      "Utils",
+
+      //HCI
+      "HCI", "Key", "HCIEvent", "MouseStatus", "RemoteType",
+      //Startup
+      "StartUp", "Loader", "ConfigurationFactory", "ModuleType", "LoaderEvent",
+      //Logger
+      "Logger", "ConsoleAppender", "DebugPrintAppender", "ConsoleLayout",
+      "EkiohConsoleAppender",
+      //Storage
+      "Storage", "PersistenceManager",
+      //Updater
+      "Updater",
+
+      //Container
+      "ContainerManager", "Container",
+      //Application
+      "ApplicationManager", "Application",
+      //Service
+      "ServiceFactory", "Service",
+      //Controller
+      "Controller", "ControllerFactory", "ControllerManager",
+      "ControllerManagerEvent", "ControllerManagerStatus", "ControllerManagerLogger",
+      //UIC
+      "StyleManager", "UIC", "UICFactory", "UICBreadcrumbRoot", "UICPreviewImage",
+      "UICClickableScroll", "UICInfoScreen", "UICPreviewDataCssType",
+      "UICHoverZoneType", "UICMoviePreviewType", "UICHomeButton",
+      "UICHomeElementsType", "UICMovieDetailButton", "UICPreview",
+
+      //Standby
+      "StandbyManager",
+      //Display
+      "DisplayManager", "DisplayFormat", "DisplayFormatId",
+      //Volume
+      "VolumeManager", "VolumeEvent",
+      //Language
+      "LanguageManager", "Language", "Messages", "Keyboard", "LanguagesLocaleId",
+      //Network
+      "NetworkManager", "NetworkEvent", "NetworkIpType",
+      "NetworkState", "NetworkConnectionType",
+      "WirelessMode", "WirelessNetwork", "WirelessSecurityMode",
+      //MediaPlayer
+      "MediaPlayerManager", "PlaybackEvent", "SubtitleEvent", "ResumeEvent",
+      "PlaybackState", "PlaylistRepeatMode", "PlaylistMode", "PlaylistPlaybackMode",
+      "PlaybackStopReturn", "TrickModesBehaviour", "TrackMetadata", "DRMType",
+      //PhotoPlayer
+      "PhotoPlayerManager", "PhotoPlaybackEvent", "PhotoMetadata",
+      "PhotoTransitionType", "PhotoSlideShowDelay",
+      //Subtitles
+      "SubtitleType", "SubtitleColorId", "SubtitleSizeId",
+      "SubtitleColor", "SubtitleSize",
+      //TV
+      "TVManager", "TunerEvents", "ChannelType", "ChannelFullInfo",
+      "TunerStatus", "TVScanError", "Channel",
+      "TVProgram", "TVParseChannelNumber",
+      //Browser
+      "BrowserManager",
+      //Search
+      "SearchManager", "Searchable", "SearchResult", "SearchNode", "SearchNodeType",
+      //Setup
+      "SetupManager", "SetupElement", "SetupType", "SetupNode", "SetupID",
+      "PreviewElement",
+      //FAQ
+      "FAQManager", "FAQSection", "FAQ", "FAQSectionsIds", "FAQDataSource",
+      "FAQAjaxDataSource", "FAQFileSystemDataSource", "FAQServerDataSource",
+
+      //Dev
+      "SimulatorManager",
+      //TV
+      "NavigationBarButtons", "ScreenType",
+      //Mediabox
+      "OreganEvents", "MediaItemEvent", "MediaContainerEvent", "MediaPlayerEvent",
+
+      //Dev drivers
+      "DevI18NDriver", "DevNetworkSimDriver", "DevFileSystemSimDriver",
+      "DevVolumeSimDriver", "DevMediaPlayerSimDriver", "DevTVSimDriver",
+      "DevHCIDriver", "DevPersistenceDriver", "DevLogger", "DevBrowserDriver",
+      //Mediabox drivers
+      "MediaboxI18NDriver", "MediaBoxTVDriver", "MediaboxFileSystemDriver",
+      "MediaboxPersistenceDriver", "MediaboxVolumeDriver", "MediaboxBrowserDriver",
+      "MediaboxHCIDriver", "MediaboxStandbyDriver", "MediaboxNetworkDriver",
+      "MediaboxDisplayDriver", "MediaboxMediaPlayerDriver", "MediaboxPhotoPlayerDriver",
+      //LG drivers
+      "LGTVHCIDriver", "LGI18NDriver", "LGPersistenceDriver", "LGTVNetworkDriver",
+      "LGTVMediaPlayerDriver",
+      //Samsung drivers
+      "SamsungTVI18NDriver", "SamsungTVVolumeDriver", "SamsungTVPersistenceDriver",
+      "SamsungTVHCIDriver", "SamsungTVNetworkDriver", "SamsungTVMediaPlayerDriver",
+
+      //Samba
+      "SambaEngine", "AuthenticationStore", "SambaWatchDog", "SharedFolder",
+      "Samba", "FolderEvent", "SambaDevice", "DeviceEvent",
+      //Gaia
+      "GaiaPerson", "GaiaStaff", "GaiaGenre", "GaiaCategory", "GaiaMediaUrl",
+      "GaiaImage", "GaiaMedia", "GaiaSubtitle", "GaiaMovie","GaiaSimpleMovie",
+      "GaiaPlaylist", "GaiaLogin", "GaiaLoginRenew","GaiaEnumStatusCode",
+      "GaiaEnumQuality", "GaiaEnumAgeRating", "GaiaEnumRole", "GaiaEnumImageType",
+      "GaiaMenuItemType", "GaiaMenuItem", "GaiaServiceMessage", "GaiaLoginEvent",
+
+      //Aggregator
+      "AGGServices", "AGGFolders", "AGGSearchBy", "AGGSearchType", "AGGOrderBy",
+      "AGGComparison", "AGGMediaType", "AGGQuery", "AggregatorManager",
+      //Videoclub
+      "VideoclubManager", "Videoclub",
+      //Videoclub ALU
+      "Promotion", "Category", "MediaAge", "Media", "PromotionsManager",
+      "VideoclubEvent", "PopCha",
+      //Playlists
+      "ServiceActivationType",
+      //FileSystemExplorer
+      "FileSystemEvent", "FileSystemManager", "FileType", "File", "FileSystemExplorer",
+      "ItemType", "DeviceClass", "FolderClass", "MediaItemClass", "ItemStatus", "ItemFactory",
+      //Pinchos
+      "TVAppsVersion", "TVAppsDeployment", "TVAppsURL", "ServicePromotion",
+      "ServicePromotionsManager", "TVAppsAPI", "TVAppsError", "TVAppsConf",
+      "TVAppsManager", "Fader", "ServicesUtils", "WMMap", "UICPinchoPreview"
+    ]
+  }
